@@ -6,14 +6,14 @@ import joblib
 from model import predict_house, Addresses
 html_temp = """
     <div>
-    <h1 style="color:MEDIUMSEAGREEN;text-align:left;"> Forecasting the price of divar houses in 1400 by Samyar dagigi Rad </h1>
+    <h1 style="color:MEDIUMSEAGREEN;text-align:left;"> predicting the price of divar houses in 1400 by Samyar dagihghi Rad </h1>
     </div>
     """
 
 st.markdown(html_temp, unsafe_allow_html=True)
-st.title('please give us your info so we can predict this question :ship:')
-address = st.selectbox("Choose class", Addresses)
-area = st.number_input("Input Fare Price", 0,1000)
+st.title('please give us :house: info')
+address = st.selectbox("Choose Address", Addresses)
+area = st.number_input("Area", 0,1000)
 elevator = st.select_slider("Choose elevator", [0,1])
 warehouse = st.select_slider("Choose Warehouse", [0,1])
 parking = st.select_slider("Choose parking", [0,1])
