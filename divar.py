@@ -25,7 +25,7 @@ def predict():
     print(room)
 
     result = '{:,.0f}'.format(decimal_value)
-    st.success(f'your house {result} :thumbsup:')
+    st.success(f'this house price : {result}')
 st.write(f"See your result in top of the page")
 
 trigger = st.button('Predict', on_click=predict)
